@@ -1,0 +1,51 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+section {
+  padding: 10vh 0;
+}
+section > * {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main h2 {
+  color: black;
+  font-size: 40px;
+}
+.order_btn {
+  height: 60px;
+  width: 200px;
+}
+.dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 439px;
+  width: 30%;
+}
+.dish img {
+  height: 40%;
+  border-radius: 16px 16px 0 0;
+}
+.dish_description {
+  height: 60%;
+  padding: 0 1vw;
+  background-color: #edefee;
+}
+.dish_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dish_price {
+  font-size: 16px;
+  color: #ee9972;
+  font-family: Karla-Regular;
+  font-weight: bold;
+}
+.dish_header h3 {
+  font-size: 24px;
+}

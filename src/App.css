@@ -1,38 +1,159 @@
+@font-face {
+  font-family: MarkaziText-Bold;
+  src: url(../public/fonts/MarkaziText-Bold.ttf);
+}
+@font-face {
+  font-family: MarkaziText-Medium;
+  src: url(../public/fonts/MarkaziText-Medium.ttf);
+}
+@font-face {
+  font-family: MarkaziText-Regular;
+  src: url(../public/fonts/MarkaziText-Regular.ttf);
+}
+@font-face {
+  font-family: MarkaziText-SemiBold;
+  src: url(../public/fonts/MarkaziText-SemiBold.ttf);
+}
+@font-face {
+  font-family: Karla-Medium;
+  src: url(../public/fonts/Karla-Medium.ttf);
+}
+@font-face {
+  font-family: Karla-Bold;
+  src: url(../public/fonts/Karla-Bold.ttf);
+}
+@font-face {
+  font-family: Karla-Regular;
+  src: url(../public/fonts/Karla-Regular.ttf);
+}
+@font-face {
+  font-family: Karla-ExtraBold;
+  src: url(../public/fonts/Karla-ExtraBold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+h1 {
+  font-family: MarkaziText-Medium;
+}
+h2,
+h3 {
+  font-family: MarkaziText-Regular;
+}
+a {
+  font-family: Karla-Medium;
+  font-size: 20px;
+}
+p {
+  font-family: Karla-Regular;
+  font-size: 20px;
+}
+ul {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+li > p {
+  font-family: Karla-ExtraBold;
+  font-size: 20px;
+  color: #495e57;
+}
+button {
+  background-color: #f4ce14;
+  color: black;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer,
+nav,
+header,
+main {
+  padding: 0 20vw;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer,
+nav ul,
+nav,
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+nav {
+  justify-content: space-between;
+  height: 20vh;
+}
+nav > img {
+  width: 20%;
+}
+nav > ul {
+  width: 80%;
+  justify-content: space-around;
+  list-style: none;
+}
+nav > ul a {
+  font-size: 20px;
+  color: black;
+}
+header {
+  height: 40vh;
+  justify-content: space-between;
+  background-color: #495e57;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+  font-weight: 100;
+  color: #f4ce14;
+  font-size: 56px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-weight: 100;
+  font-size: 32px;
+}
+header img {
+  height: 45vh;
+  width: 20vw;
+  margin-top: 10vh;
+  border-radius: 15px;
+  z-index: 1;
+}
+header div {
+  width: 50%;
+}
+button {
+  padding: 1vh 1vw;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+footer {
+  justify-content: space-around;
+  height: 40vh;
+  background-color: #d9d9d9;
+}
+footer img {
+  height: 20%;
+}
+footer li > p {
+  font-family: Karla-ExtraBold;
+  color: #495e57;
+}
+.bottom_nav {
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.bottom_nav li {
+  list-style: none;
+}
+.bottom_nav a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
 }
