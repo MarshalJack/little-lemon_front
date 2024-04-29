@@ -58,22 +58,19 @@ a {
 li {
   list-style: none;
 }
-li > p {
-  font-family: Karla-ExtraBold;
-  font-size: 20px;
-  color: #495e57;
-}
 button {
   background-color: #f4ce14;
   color: black;
+}
+button:hover {
+  cursor: pointer;
 }
 .App {
   text-align: center;
 }
 footer,
 nav,
-header,
-main {
+header {
   padding: 0 20vw;
 }
 footer,
