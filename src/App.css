@@ -93,6 +93,14 @@ nav > ul {
   justify-content: space-around;
   list-style: none;
 }
+nav li,
+.nav_checked {
+  padding: 1%;
+  border-radius: 10px;
+}
+nav li:hover {
+  background-color: #495e57;
+}
 nav > ul a {
   font-size: 20px;
   color: black;
