@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import "../App.css";
 
 export default function Nav() {
   return (
@@ -6,7 +8,9 @@ export default function Nav() {
       <img src="./img/Logo.svg" alt="logo"></img>
       <ul>
         <li>
-          <a href="">Home</a>{" "}
+          <NavLink to="/" activeClassName="nav_checked">
+            Home
+          </NavLink>
         </li>
         <li>
           <a href="">About</a>
@@ -15,7 +19,9 @@ export default function Nav() {
           <a href="">Menu</a>
         </li>
         <li>
-          <a href="">Reservations</a>
+          <NavLink to="/reservation" activeClassName="nav_checked">
+            Reservation
+          </NavLink>
         </li>
         <li>
           <a href="">Order Online</a>

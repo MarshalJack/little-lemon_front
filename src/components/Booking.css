@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+form {
+  background-color: #495e57;
+}
+fieldset,
+h1 {
+  padding: 0 20vw;
+}
+fieldset {
+  border: none;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  align-items: center;
+}
+label {
+  color: white;
+  font-family: Karla-Regular;
+}
+.book_radio > label {
+  font-family: Karla-Bold;
+}
